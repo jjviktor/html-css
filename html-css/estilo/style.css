@@ -49,6 +49,7 @@ header > p {
     color: white;
     max-width: 500px;
     margin: auto;
+    padding-bottom: 50px;
 }
 
 nav {
