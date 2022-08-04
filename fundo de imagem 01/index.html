@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo de imagens</title>
+    <style>
+        body {
+            background-image: url('img/wallpaper001.jpg');
+        }
+        div.quadrado { 
+            display: inline-block;   /*Deixar as bordas na lateral*/
+            border: 2px solid black;    /*Borda*/
+            border-radius: 10px;       /* borda arrendondada*/
+            width: 300px;   /*altura*/
+            height: 300px;  /*Largura*/
+            background-color: lightgray; 
+
+        }
+        div#q1 {
+            background-color: skyblue;
+        }
+
+        div#q2 {
+            background-image: linear-gradient(to bottom, red, yellow);
+        }
+
+        div#q3 {
+            background-image: url('img/pattern001.png');
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
