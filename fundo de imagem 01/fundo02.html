@@ -14,17 +14,44 @@
             background-size: 1381px 660px;
             background-repeat: no-repeat;
         }
-        div#p1 a{
+        nav {
             font-family: 'Kaushan Script', sans-serif;
-            font-size: 30px;
-            padding-inline: 10%;
-            margin-left: 50px;
-            text-align: justify;
-            text-indent: 20px;
-            color: rgb(66, 224, 224);
-            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 45px;
+            padding-left: 8%;
+            padding-right: 8%;
         }
 
+        nav h2 {
+            color: #fff;
+            font-size: 35px;
+            cursor: pointer;
+            letter-spacing: 2px;
+        }
+
+        span {
+            color: red  ;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 10px 25px;
+            list-style-type: none;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        nav ul li a:hover {
+            color: brown;
+        }
+        
         header {
             font-family: 'Kaushan Script', sans-serif;
             color: rgba(138, 138, 130, 0);
@@ -42,9 +69,20 @@
     </style>
 </head>
 <body>
-    <div class="perfil" id="p1">
-        <a href="#">Perfil</a>
-    </div>
+    <div class="background">
+    <nav>
+        <h2>Portfo<span>lio</span></h2>
+        <ul class="cabeçalho">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Habilidades</a></li>
+            <li><a href="#">Contatos</a></li>
+            <li><a href="#">Subscribe</a></li>
+            <li><a href="#">Sobre</a></li>
+        </ul>
+    </nav>
+    </div><!--Cabeçalho-->
     <header>
         <h1>
             <p>JJ.ViktOR-PE</p>
