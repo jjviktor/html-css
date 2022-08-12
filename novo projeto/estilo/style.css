@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +21,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkcyan;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +33,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header > p {
@@ -40,6 +56,11 @@ section {
         padding-bottom: 10vh;
         line-height: 2em;
         padding-left: 30px;
+        font-family: var(--fonte3);
+}
+
+section >p {
+    padding: 2em;
 }
 
 section.normal {
@@ -50,11 +71,24 @@ section.normal {
 section.imagem {
     background-color: rgb(34, 14, 14);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 section.imagem > p {
     width: 400px;
     background-color: rgba(43, 26, 26, 0.562);
+}
+
+section#img01 {
+    background-image:url(../imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer {
