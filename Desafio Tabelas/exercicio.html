@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid rgb(22, 21, 20);
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th.mulheres {
+            font-family: 'Parisienne', cursive;
+            font-size: 50px;
+            background-color: hotpink;
+            color: cornsilk;
+        }
+
+        th.linha {
+            background-color: rgb(132, 78, 146);
+        }
+
+        td.nome1 {
+            background-color: rgb(231, 53, 142);
+        }
+
+        td.filmes1 {
+            background-color: teal  ;
+        }
+
+        th.homens {
+            background-color: rgb(39, 118, 163);
+            font-family: 'Monoton', cursive;
+            font-size: 50px;
+            color: rgb(167, 49, 14);
+        }
+
+        td.nome2 {
+            background-color: rgb(115, 68, 226);
+        }
+
+        td.filmes2 {
+            background-color: slategrey;
+        }
+
+        tfoot {
+            background-color: rgb(132, 78, 146);;
+        }
+
+        td.total {
+            background-color: yellow;
+        }
+
+        h1 {
+            font-family: 'Monoton', cursive;
+            border: solid 2px black;
+        }
+
+        caption {
+            font-family: 'Parisienne', cursive;
+            font-size: 50px;
+            color: springgreen;
+            text-shadow: 2px 3px 4px black;
+
+        }
+
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+    <div id="container">
+        <table>
+            <caption>
+                Filmes Favoritos
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col" class="linha">Grupos</th>
+                    <th scope="col" class="linha">Nomes</th>
+                    <th colspan="3" scope="colgroup" class="linha">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <colgroup>
+                    <col class="grupos">
+                    <col class="nomes">
+                    <col class="filmes">
+                </colgroup>
+                <th rowspan="3" scope="rowgroup" class="mulheres">Mulheres</th>
+                <td class="nome1">Ana Maria Santos</td>
+                <td class="filmes1">Alien</td>
+                <td class="filmes1">Rambo</td>
+                <td class="filmes1">Vingadores</td>
+                <tr>
+                    <td class="nome1">Beatriz Souza</td>
+                    <td class="filmes1">Hulk</td>
+                    <td class="filmes1">Inception</td>
+                    <td class="filmes1">Batman</td>
+                </tr>
+                <tr>
+                    <td class="nome1">Cláudia Melo</td>
+                    <td class="filmes1">Oblivion</td>
+                    <td class="filmes1">Matrix</td>
+                    <td class="filmes1">Big Hero</td>
+                </tr>
+                <th rowspan="3" scope="rowgroup" class="homens">Homens</th>
+                    <td class="nome2">Bruno Mendonça</td>
+                    <td class="filmes2">Intocáveis</td>
+                    <td class="filmes2">Amnésia</td>
+                    <td class="filmes2">Gladiador</td>
+                <tr>
+                    <td class="nome2">Daniel Lourenço</td>
+                    <td class="filmes2">Wall-E</td>
+                    <td class="filmes2">Oldboy</td>
+                    <td class="filmes2">Dangal</td>
+                </tr>
+                <tr>
+                    <td class="nome2">Fabiano Mota</td>
+                    <td class="filmes2">Star Wars 5</td>
+                    <td class="filmes2">Taxi Driver</td>
+                    <td class="filmes2">Toy Story</td>
+                </tr>
+        
+                <tfoot>
+                    <th colspan="4" scope="row">Total</th>
+                    <td class="total">1000</td>
+                </tfoot>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
