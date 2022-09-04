@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframe</title>
+    <style>
+
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: rgb(109, 8, 8);
+            color: white;
+            background-image: url(wallpaperflare.com_wallpaper.jpg);
+        }
+        
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: solid 2px black;
+            border-radius: 20px;
+        }
+
+        
+
+        a {
+            background-color: coral;
+            text-decoration: none;
+            border-radius: 20px;
+            border: solid 2px black;
+            margin: 20px;
+            font-size: 50px;
+        }
+
+        a#home {
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso do Iframe</h1>
+    <a href="pag2.html" target="iframe">Primeira Pagina</a>
+    <a href="pag3.html" target="iframe">Segunda Pagina</a>
+    <a href="iframe.html" id="home">Inicio</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid possimus maiores nemo praesentium cum velit, consequatur molestias dolor sed rerum, a enim est! Eum ea placeat molestias veniam cupiditate ullam.</p>
+    <iframe srcdoc="<img src='1.png'>" name="iframe"></iframe>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi architecto iusto voluptate tempore. Doloremque, animi deleniti eligendi dolorum possimus aspernatur? Voluptates nemo eos ea beatae eaque, nisi maxime sequi error. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ad quia praesentium omnis suscipit quod consequuntur tempora nam, in quis, amet ea molestias, perspiciatis iure qui dolorum minus ex rerum?</p>
+    <img src="" alt="">
+</body>
+</html>
